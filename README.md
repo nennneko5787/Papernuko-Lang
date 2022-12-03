@@ -8,6 +8,8 @@ HSPでプログラミング言語っぽいものを作る**テスト**<br>
 <pre><span style="color:skyblue;">locate</span> &lt;x&gt;,&lt;y&gt;</pre>
 * title命令
 <pre><span style="color:skyblue;">title</span> &lt;text&gt;</pre>
+* mci命令
+<pre><span style="color:skyblue;">mci</span> &lt;text&gt;</pre>
 ## 特徴
 * なんと文字列は"で囲わなくてもいい！
 ## サンプル
