@@ -1,0 +1,11 @@
+title ""
+if dir_cmdline == "":dialog "Error",0,"Papernuko"
+notesel script
+noteload dir_cmdline
+repeat notemax
+noteget nline,cnt
+split nline," ",nfunc,nins
+if nfunc="print":mes nins
+if nfunc="title":sendmsg hwnd, $C, , nins
+if nfunc="locate":split nins,",",locx,locy:pos int(locx),int(locy)
+loop
