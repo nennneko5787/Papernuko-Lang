@@ -1,6 +1,6 @@
 # Papernuko-Lang
-HSPでプログラミング言語っぽいものを作る**テスト**。 
-<small>ちなみに読み方はぺーぱーぬこです(^^;</small> 
+HSPでプログラミング言語っぽいものを作る**テスト**<br>
+<span style="font-size:xx-small;">ちなみに読み方はぺーぱーぬこです(^^;</span>
 ## 現在実装されている命令・関数
 * print命令
 <pre><span style="color:skyblue;">print</span> &lt;text&gt;</pre>
