@@ -1,0 +1,2 @@
+print CDドライブ オープン！
+mci set CDAudio door open

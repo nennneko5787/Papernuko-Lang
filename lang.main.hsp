@@ -1,11 +1,25 @@
 title ""
 if dir_cmdline == "":dialog "Error",0,"Papernuko"
+sdim nins
+nins2 = ""
 notesel script
 noteload dir_cmdline
 repeat notemax
+nline = ""
 noteget nline,cnt
+nfunc=""
+sdim nins
 split nline," ",nfunc,nins
-if nfunc="print":mes nins
-if nfunc="title":sendmsg hwnd, $C, , nins
-if nfunc="locate":split nins,",",locx,locy:pos int(locx),int(locy)
+nins2 = ""
+repeat length(nins)
+if cnt == length(nins){
+	nins2 += nins(cnt)+""
+}else{
+	nins2 += nins(cnt)+" "
+}
+loop
+if nfunc="print":mes nins2
+if nfunc="title":sendmsg hwnd, $C, , nins2
+if nfunc="locate":split nins2,",",locx,locy:pos int(locx),int(locy)
+if nfunc="mci":mci nins2
 loop
